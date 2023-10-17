@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="quinto" id="inicioSecion">
+        <div class="contenedor__todo">
+          <div class="caja__trasera">
+              <div class="caja__trasera-login">
+                  <h3>¿Ya tienes una cuenta?</h3>
+                  <p>Inicia secion para entrar en la página</p>
+                  <button id="btn__iniciar-secion">Iniciar Seccion</button>
+              </div>
+    
+              <div class="caja__trasera-registrer">
+              
+                  <h3>¿Ya tienes una cuenta?</h3>
+                  <p>Registrate para entrar en la página</p>
+                  <button id="btn__registrese">Registrese</button>
+              </div>
+             
+          </div>
+    
+    
+          <!--Contenedor Loigin Registrer-->
+          <div class="contenedor__login-registrer">
+              <!-- Login -->
+              
+              <form action="" class="formulario__login">
+                  <h2>Iniciar Secion</h2>
+                  <input type="text" placeholder="Correo Electronico">
+                  <input type="password" placeholder="Contraseña" >
+                  <button>Entrar</button>
+              </form>
+    
+            <form action="${pageContext.request.contextPath}/NewServlet}" method="Post" class="formulario__registrer"> 
+                <!--Registro-->
+                  <h2>Registrarse</h2>
+                  <input type="text" placeholder="Nombre" name="nombre" required>
+                  <input type="text" placeholder="Apellido" name="apellido" required>
+                  <input type="text" placeholder="Correo Electronico" name="correo" required>            
+                  <input type="text" placeholder="Contraseña" name="contrasenia" required>
+                  <Button type="submit">Registrarse</Button>
+              </form>
+    
+          </div>
+    
+      </div>
+        </div>
+    <script src="script/login.js"></script>
+    </main>
+</body>
+</html>

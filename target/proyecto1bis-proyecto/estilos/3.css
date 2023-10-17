@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+}
+.nav_comun{
+    background-color: #33383f;
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.nav_comun ul li{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.nav_comun ul li a{
+    color: rgb(255, 255, 255);
+}
+.nav_comun ul li a:hover{
+font-weight: bold;
+}
+
+.nav_comun .logo, .nav_res .logo{
+height: 100%;
+margin-right: 15px;
+}
+
+.nav_comun .verde{
+    color:green;
+}
+
+
+
+
+.nav_res .btnMenu{
+  height: 53%;
+  margin-right: 25px;  
+}
+.nav_res .btnMenu:hover{
+    height: 55%;
+    cursor: pointer;
+}
+.nav_res .ulRes{
+    width: 100%;    
+    position: absolute;
+    top:13vh;
+    z-index: 9999;
+    display: none;
+}
+.mostrarMenu{
+    display: block !important;
+}
+
+.ulRes li{
+    background-color: gray;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ulRes li:hover{
+background-color: rgb(217, 206, 206);
+
+}
+
+.ulRes li a{
+    color: white;
+    cursor: pointer;
+}
+
+
+.nav_res{
+display: none;
+}
+.barraMenuRes{
+    background-color: #33383f;
+    width: 100%;
+    height: 13vh; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+@media (max-width: 855px){
+    .nav_comun{
+        display: none;
+    }
+    .nav_res{
+        display: block;
+    }
+
+}
+
+
+main{
+width: 100%;
+min-height: 75vh;
+}
+.conteiner_tituloComprar{
+padding: 5% 10% 0.3% 10%;
+}
+
+.conteiner_promociones{
+    margin-top: 2%;
+    margin-bottom: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cajita{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.cajita p{
+font-size: small;
+font-weight: 500;
+color: #ffffff;
+text-shadow: 3px 3px 3px #1C3846;
+
+}
+   
+
+
+.cAzul{
+    background-color: blue;
+}
+.cVerde{
+    background-color: green;
+}
+
+.cajaSeleccionada{
+    width: 200px;
+    height: 200px;
+    border: 15px solid rgb(212, 212, 19);
+}
+
+
+.conteiner_imputs-comprarTiquet{
+    width: 640px;
+    height: 70vh;
+    margin: 5px auto; 
+
+}
+
+.inputs_NyA, .input_correo{
+width: 82%;
+margin: 0 auto;
+display: flex;
+gap:10px;
+margin-top: 10px;
+}
+input{
+    padding-left: 10px;
+}
+.categoria_texto, .inputs_categoria-texto{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+
+
+#nom, #apell, #correo{
+height: 35px;
+width: 100%;
+}
+
+#cantidad{
+    height: 35px;
+    width: 200px;
+}
+
+#categoria{
+    height: 35px;
+    width: 200px;
+}
+
+.caja__valorTotal{
+    background-color: #CCE5FF;
+    height: 70px;
+    margin: 10px auto;
+    width: 82%;
+    border: 1px solid #99c6f7;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    }
+
+
+    
+    .conteiner__botones_dos{
+        width: 82%;
+        display: flex;
+        gap: 15px;
+        margin: 0 auto;
+    }
+
+
+
+    .conteiner__botones_dos button{
+        width: 100%;
+        height: 35px;
+       background: #97C93E;
+       border: .5px #82a544;
+       border-radius: 2px;
+      color: white;
+      
+      }    
+      
+      
+      
+      
+      .conteiner__botones_dos button:hover{
+       cursor: pointer;
+       background: #7b8e59;     
+      }
+      
+      @media (max-width: 690px){
+        .conteiner_promociones{
+            margin-top: 2%;
+            margin-bottom: 4%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cajita{
+            height: 150px;
+            width: 150px;
+
+        }
+
+
+        .conteiner_imputs-comprarTiquet{
+            width: 95%;
+            height: 70vh;
+            margin: 5px auto; 
+        
+        }
+
+        #cantidad{
+            width: 30%;
+        }
+        
+        #categoria{
+            width: 30%;
+        }
+      }
+
+      @media (max-width: 490px){
+        .cajita{
+            height: 120px;
+            width: 120px;
+
+        }
+
+      }
+
+      
+footer{ 
+    margin-top: 130px;
+    background:linear-gradient(to right, #1C3846,#1E5170);
+    display:flex;  
+    justify-content: center;
+    align-items: center;
+    }
+   
+    footer ul li { 
+      display: inline-block; 
+      padding: 30px 20px; 
+      color:white;
+       font-size: 12px; 
+       font-weight: 600;
+      }
+      
+  
+      @media (max-width: 705px) {
+      footer>ul>li  {
+        display: none;
+  
+      }  }
+  
+      
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,5 @@
+baseDatos\NewMain.class
+modelo\Orador.class
+servlets\NewServlet.class
+baseDatos\Conexion.class
+baseDatos\OradorDate.class

@@ -1,0 +1,82 @@
+main{
+    width: 100%;
+    min-height: 80vh;
+}
+
+.conteiner_listaOradores{
+padding: 5% 10% 0.3% 10%;
+
+}
+
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 35px auto 100px auto;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  #foot {
+    margin-top: 10px;
+  }
+    
+  .boton-rojo {
+    color: rgb(86, 84, 84);
+    border: none;
+    padding: 5px 10px;
+  }
+  .boton-amarillo {
+    color: rgb(86, 84, 84);
+    border: none;
+    padding: 5px 10px;
+  }
+
+  .boton-rojo:hover {
+      cursor: pointer;      
+  }
+  
+ .iconoTabla:hover{
+	 cursor: pointer;
+ }
+
+  @media (max-width: 900px){
+      .boton-rojo {
+
+        color: rgb(86, 84, 84);
+        border: none;
+        padding: 10px 7px;
+      }
+      .boton-amarillo {
+
+        color: rgb(86, 84, 84);
+        border: none;
+        padding: 10px 7px;
+      }
+
+      
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 35px auto;
+    }
+
+  }
+  
